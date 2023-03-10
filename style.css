@@ -1,0 +1,168 @@
+/* Set background and font styles */
+body {
+	background-color: #000000;
+	color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+/* Set header styles */
+header {
+	background-color: #121212;
+	padding: 30px;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	font-size: 50px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+header p {
+	font-size: 20px;
+	margin: 20px 0;
+	text-align: center;
+}
+
+header button {
+	background-color: #1A1A1A;
+	border: none;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+
+/* Set navigation styles */
+nav {
+	margin-top: 30px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+	color: #1A1A1A;
+	background-color: #FFFFFF;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+/* Set section styles */
+section {
+	padding: 100px 0;
+}
+
+section h2 {
+	font-size: 40px;
+	margin: 0 0 50px 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+section p {
+	font-size: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Set container styles */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Set project grid styles */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 40px;
+}
+
+.grid img {
+	max-width: 100%;
+	height: auto;
+}
+
+.grid h3 {
+	font-size: 24px;
+	margin: 20px 0;
+}
+
+.grid p {
+	font-size: 18px;
+	line-height: 1.4;
+	margin: 10px 0;
+}
+
+/* Set form styles */
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	background-color: #121212;
+	border: none;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	font-size: 16px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	outline: none;
+	box-shadow: 0 0 5px #FFFFFF;
+}
+
+button[type="submit"] {
+	background-color: #FFFFFF;
+	color: #121212;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
