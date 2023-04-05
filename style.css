@@ -74,6 +74,7 @@ nav ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 
 nav li {
@@ -83,8 +84,11 @@ nav li {
 nav a {
 	text-decoration: none;
 	color: #FFFFFF;
+	background-color: #E6E6E6;
 	font-size: 20px;
 	font-weight: bold;
+	padding: 3px 7px;
+	border-radius: 5px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	transition: all 0.3s ease-in-out;
@@ -113,7 +117,7 @@ section h2 {
 section p {
 	font-size: 20px;
 	margin-bottom: 50px;
-	text-align: center;
+	text-align: justify;
 }
 
 /* Set container styles */
