@@ -65,3 +65,52 @@ window.addEventListener('scroll', () => {
   }
   prevScrollPos = currentScrollPos;
 });
+
+
+const carousel = document.querySelector('.carousel');
+const slides = carousel.querySelector('.slides');
+const slideList = carousel.querySelectorAll('.slide');
+const indicators = carousel.querySelectorAll('.indicator');
+const prevBtn = carousel.querySelector('.prev');
+const nextBtn = carousel.querySelector('.next');
+
+let currentIndex = 0;
+let slideCount = slideList.length;
+let slideWidth = slideList[0].offsetWidth;
+
+function goToSlide(index) {
+  if (index < 0) {
+    index = slideCount - 1;
+  } else if (index >= slideCount) {
+    index = 0;
+  }
+  currentIndex = index;
+  slides.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+  indicators.forEach(indicator => indicator.classList.remove('active'));
+  indicators[currentIndex].classList.add('active');
+}
+
+function goToPrev() {
+  goToSlide(currentIndex - 1);
+}
+
+function goToNext() {
+  goToSlide(currentIndex + 1);
+}
+
+indicators.forEach((indicator, index) => {
+  indicator.addEventListener('click', () => {
+    goToSlide(index);
+  });
+});
+
+prevBtn.addEventListener('click', goToPrev);
+nextBtn.addEventListener('click', goToNext);
+
+goToSlide(currentIndex);
+
+
+function myFunction()
+{
+  location.replace("https://music.youtube.com/watch?v=dQw4w9WgXcQ")
+}
